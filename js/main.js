@@ -31,6 +31,7 @@ document.querySelector('.menu-fechar').onclick = function() {
 document.documentElement.onclick = function(event) {
     if (event.target === document.documentElement) {
         document.documentElement.classList.remove('menu-ativo');
+        dialog.close();
     }
 };
 
