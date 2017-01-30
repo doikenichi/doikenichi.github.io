@@ -108,7 +108,7 @@ dialog strong {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .barra-nav {
         background: #f0f0f0;
         padding: 1em;
@@ -116,7 +116,7 @@ dialog strong {
 
         height: 100%;
         width: 90%
-        max-width: 320px;
+        max-width: 600px;
 
         position: fixed;
         z-index: 1;
@@ -139,7 +139,7 @@ dialog strong {
 }
 
 
-@media (min-width: 1000px) {
+@media not all and (max-width: 600px) {
     .menu-abrir,
     .menu-fechar,
 	.barra-nav,
