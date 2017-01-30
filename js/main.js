@@ -20,7 +20,19 @@ slideAcupuntura.addEventListener("click", function(event) {
 });
 */
 
+document.querySelector('.menu-abrir').onclick = function() {
+    document.documentElement.classList.add('menu-ativo');
+};
 
+document.querySelector('.menu-fechar').onclick = function() {
+    document.documentElement.classList.remove('menu-ativo');
+};
+
+document.documentElement.onclick = function(event) {
+    if (event.target === document.documentElement) {
+        document.documentElement.classList.remove('menu-ativo');
+    }
+};
 
 var slideAcupuntura = document.querySelector("#slide-acupuntura");
 var slideBanhoDeLua = document.querySelector("#slide-banho-de-lua");
