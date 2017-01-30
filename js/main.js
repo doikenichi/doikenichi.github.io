@@ -31,7 +31,20 @@ document.querySelector('.menu-fechar').onclick = function() {
 document.documentElement.onclick = function(event) {
     if (event.target === document.documentElement) {
         document.documentElement.classList.remove('menu-ativo');
-        dialog.close();
+        descAcupuntura.close();
+        descBanhoDeLua.close();
+        descBanhoDeOfuro.close();
+        descDrenagemLinfatica.close();
+        descGommage.close();
+        descLimpezaDePele.close();
+        descMascaraFacial.close();
+        descMassagemClassica.close();
+        descMassagemFacial.close();
+        descHotStones.close();
+        descReflexologiaNosPes.close();
+        descSauna.close();
+        descShiatsu.close();
+        descShizenExpress.close();
     }
 };
 
