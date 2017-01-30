@@ -35,7 +35,7 @@ body {
 	border-style: solid none;
 	border-width: 0.5em;
 	border-color: #cbc7b3;
-	max-width: 50%;
+	width: 100%;
 }
 
 .slider-nav img {
