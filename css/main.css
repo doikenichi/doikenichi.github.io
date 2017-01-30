@@ -6,30 +6,6 @@ body {
 	color: #cbc7b3;
 }
 
-.menu {
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: baseline;
-	justify-content: space-around;
-}
-
-.menu-item {
-	-webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #cbc7b3;
-	text-align: center;
-	padding: 0.5em;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#554a2b+0,332d1a+100;Olive+3D */
-	background: #554a2b; /* Old browsers */
-	background: -moz-linear-gradient(top,  #554a2b 0%, #332d1a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #554a2b 0%,#332d1a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  # 0%,#332d1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#554a2b', endColorstr='#332d1a',GradientType=0 ); /* IE6-9 */
-
-}
 
 .servicos {
 	border-style: solid none;
@@ -152,32 +128,63 @@ dialog strong {
     .menu-ativo .barra-nav {
         left: 0;
     }
+	
+	.menu-principal li {
+        padding: 1em 0;
+        width: 100%;
+    }
 	.menu {
 		display: none;
 	}
 }
 
 
-@media not all and (max-width: 600px) {
+@media  (min-width: 600px) {
     .menu-abrir,
-    .menu-fechar {
+    .menu-fechar,
+	  .barra-nav {
         display: none;
     }
+	
 	.menu {
-		display: inline;
+			display: -webkit-flex;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: baseline;
+			justify-content: space-around;
 	}
+	
+	.menu-item {
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+		font-size: 1.1em;
+		font-weight: bold;
+		color: #cbc7b3;
+		text-align: center;
+		padding: 0.5em;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#554a2b+0,332d1a+100;Olive+3D */
+		background: #554a2b; /* Old browsers */
+		background: -moz-linear-gradient(top,  #554a2b 0%, #332d1a 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #554a2b 0%,#332d1a 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  # 0%,#332d1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#554a2b', endColorstr='#332d1a',GradientType=0 ); /* IE6-9 */
+
+	}
+
 }
 
 
-.menu-ativo:after {
-    content: "";
-    display: block;
+@media (max-width: 600px) {
+    .menu-ativo:after {
+        content: "";
+        display: block;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
 
-    background: rgba(0,0,0,0.4);
+        background: rgba(0,0,0,0.4);
+    }
 }
