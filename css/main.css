@@ -140,6 +140,7 @@ dialog strong {
     padding-top:.125em;
     border-top: .375em double #000;
     border-bottom: .125em solid #000;
+    border-color: #FFA07A;
 
     vertical-align: middle;
     margin: 0.5em;    
@@ -223,5 +224,3 @@ dialog strong {
 	}
 
 }
-
-
