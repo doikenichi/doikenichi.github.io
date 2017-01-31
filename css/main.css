@@ -153,9 +153,9 @@ dialog strong {
     height: 0;
     //width:.75em;
     width: 50px;
-    padding-top:.125em;
-    border-top: .375em double #000;
-    border-bottom: .125em solid #000;
+    //padding-top:.125em;
+    border-top: 37.5px double #000;
+    border-bottom: 12.5px solid #000;
     border-color: #FFA07A;
 
     vertical-align: middle;
@@ -239,4 +239,8 @@ dialog strong {
 
 	}
 
+}
+
+.close-dialog {
+	float: right;
 }
