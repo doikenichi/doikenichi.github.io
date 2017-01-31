@@ -72,6 +72,7 @@ dialog img {
 	padding-right: 0.5em;
 }
 
+
 dialog::backdrop {
   position: fixed;
   top: 0;
@@ -80,6 +81,19 @@ dialog::backdrop {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+/*dialog::after {
+    content: "";
+    display: block;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background: rgba(0,0,0,0.4);
+}*/
 
 dialog h1 {
 	font-size: 2em;
@@ -105,6 +119,7 @@ dialog strong {
 
 .sugestoes img {
 	max-height: 15em;
+
 }
 
 .barra-nav {
@@ -136,7 +151,8 @@ dialog strong {
 
 .menu-abrir {
     height: 0;
-    width:.75em;
+    //width:.75em;
+    width: 50px;
     padding-top:.125em;
     border-top: .375em double #000;
     border-bottom: .125em solid #000;
