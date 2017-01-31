@@ -7,19 +7,6 @@ $(function() {
 
   $('.sugestoes').slick();
 
-
-
-});
-
-/*
-var descAcupuntura = document.querySelector("#desc-acupuntura");
-var slideAcupuntura = document.querySelector("#slide-acupuntura");
-
-slideAcupuntura.addEventListener("click", function(event) {
-  descAcupuntura.showModal();
-});
-*/
-
 document.querySelector('.menu-abrir').onclick = function() {
     document.documentElement.classList.add('menu-ativo');
 };
@@ -31,22 +18,10 @@ document.querySelector('.menu-fechar').onclick = function() {
 document.documentElement.onclick = function(event) {
     if (event.target === document.documentElement) {
         document.documentElement.classList.remove('menu-ativo');
-        descAcupuntura.close();
-        descBanhoDeLua.close();
-        descBanhoDeOfuro.close();
-        descDrenagemLinfatica.close();
-        descGommage.close();
-        descLimpezaDePele.close();
-        descMascaraFacial.close();
-        descMassagemClassica.close();
-        descMassagemFacial.close();
-        descHotStones.close();
-        descReflexologiaNosPes.close();
-        descSauna.close();
-        descShiatsu.close();
-        descShizenExpress.close();
     }
 };
+
+
 
 var slideAcupuntura = document.querySelector("#slide-acupuntura");
 var slideBanhoDeLua = document.querySelector("#slide-banho-de-lua");
@@ -77,7 +52,6 @@ var descReflexologiaNosPes = document.querySelector("#desc-reflexologia-nos-pes"
 var descSauna = document.querySelector("#desc-sauna");
 var descShiatsu = document.querySelector("#desc-shiatsu");
 var descShizenExpress = document.querySelector("#desc-shizen-express");
-
 
 slideAcupuntura.addEventListener("click", function(event) {
   descAcupuntura.showModal();
@@ -121,3 +95,38 @@ slideShiatsu.addEventListener("click", function(event) {
 slideShizenExpress.addEventListener("click", function(event) {
   descShizenExpress.showModal();
 });
+
+var closeBtns = document.querySelectorAll('.close-dialog');
+for (var i = 0; i < closeBtns.length; i++) {
+    closeBtns[i].addEventListener('click', function(e) {
+      this.parentNode.close();
+    });
+  }
+
+  var $win = $(window); // or $box parent container
+  var $box = $("dialog");
+  
+  
+   $win.on("click.Bst", function(event){    
+    if ( 
+      $box.has(event.target).length == 0 //checks if descendants of $box was clicked
+      &&
+      !$box.is(event.target) //checks if the $box itself was clicked
+    ){
+      console.log("you clicked outside the box");
+    } else {
+      console.log("you clicked inside the box");
+    }
+  });
+
+});
+
+/*
+var descAcupuntura = document.querySelector("#desc-acupuntura");
+var slideAcupuntura = document.querySelector("#slide-acupuntura");
+
+slideAcupuntura.addEventListener("click", function(event) {
+  descAcupuntura.showModal();
+});
+*/
+
