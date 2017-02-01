@@ -1,12 +1,3 @@
-$(function() {
-  $('.slider-nav').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-  });
-
-  $('.sugestoes').slick();
-
 document.querySelector('.menu-abrir').onclick = function() {
     document.documentElement.classList.add('menu-ativo');
 };
