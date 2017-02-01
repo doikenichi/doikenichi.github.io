@@ -149,13 +149,17 @@ dialog strong {
     text-indent: -999em;
 }
 
+.menu-lbl {
+	border: .2em solid rgba(0, 0, 0, 0.3);
+  	border-radius: 6px;
+}
+
 .menu-abrir {
     height: 0;
-    //width:.75em;
-    width: 50px;
-    //padding-top:.125em;
-    border-top: 37.5px double #000;
-    border-bottom: 12.5px solid #000;
+    width:.75em;
+    padding-top:.125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
     border-color: #FFA07A;
 
     vertical-align: middle;
