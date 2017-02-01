@@ -152,14 +152,17 @@ dialog strong {
 .menu-lbl {
 	border: .2em solid rgba(0, 0, 0, 0.3);
   	border-radius: 6px;
+  	width: 50px;
+  	height: 50px;
+  	vertical-align: middle;
 }
 
 .menu-abrir {
     height: 0;
     width:.75em;
-    padding-top:.125em;
+    //padding-top:.125em;
     border-top: .375em double #000;
-    border-bottom: .125em solid #000;
+    border-bottom: .177em solid #000;
     border-color: #FFA07A;
 
     vertical-align: middle;
@@ -168,8 +171,11 @@ dialog strong {
 
 .menu-fechar {
     position: relative;
+    padding:.125em;
+    //padding-left: .5em;
     height: 1em;
     width: 1em;
+    //vertical-align: middle;
 }
 
 .menu-fechar:before {
