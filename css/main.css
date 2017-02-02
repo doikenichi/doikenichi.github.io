@@ -6,6 +6,19 @@ body {
 	color: #cbc7b3;
 }
 
+header {
+	/* border-top: solid;
+	border-bottom: solid;
+	border-color: #2B1C00;
+	border-width: 0.1em; */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#554a2b+0,332d1a+100;Olive+3D */
+	//background: #edebe1; /* Old browsers */
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+
+}
 
 .servicos {
 	border-style: solid none;
@@ -114,7 +127,13 @@ dialog strong {
 
 
 .sugestoes {
-	widows: 100%;
+	//top:0;
+}
+
+.sugestoes:hover {
+	Excelentes opções para presentear, nossas sugestões são memoráveis!
+Combinações especiais para você
+agradar e surpreender, sempre.
 }
 
 .sugestoes img {
