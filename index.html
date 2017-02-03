@@ -38,8 +38,6 @@
 			<ul class="nav nav-pills nav-stacked">
 				<li role="presentation"><a href="#">Home</a></li>
 				<li role="presentation"><a href="#">A Shizen</a></li>
-				<li role="presentation"><a href="#">Serviços</a></li>
-				<li role="presentation"><a href="#">Sugestões</a></li>
 				<li role="presentation"><a href="#">Presenteie</a></li>
 				<li role="presentation"><a href="#">Pague menos!</a></li>
 				<li role="presentation"><a href="#">Fotos</a></li>
@@ -49,7 +47,7 @@
 		<section class="sugestoes">
 			<h2 class="text-center" data-toggle="tooltip" title="Excelentes opções para presentear, nossas sugestões são memoráveis!
 Combinações especiais para você agradar e surpreender, sempre.">Sugestões especiais</h2>
-			<div id="carousel-sugestoes" class="carousel slide" data-ride="carousel">
+			<div id="carousel-sugestoes" class="carousel slide" data-ride="carousel" data-pause="click">
 			  	<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-sugestoes" data-slide-to="0" class="active"></li>
@@ -84,21 +82,23 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 									</div>
 								</a>
 							</div>
-							<div id="collapseSugestaoShizenDaySpa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSugestaoShizenDaySpa">
+							<div id="collapseSugestaoShizenDaySpa" class="panel-body collapse" role="tabpanel" aria-labelledby="headingSugestaoShizenDaySpa">
+								<p>A nossa sugestão <strong>SHIZEN DAY SPA</strong> é composto pelos nossos serviços abaixo especialmente escolhidos para a total relaxamento</p>
+								<p>Tempo de duração da sugestáo é de 9 horas</p>
+								<p>Os serviços oferecidos no pacote são: </p>
 								<ul>
-									<li>SHIZEN DAY SPA (9:00)*</li>
-									<li>Banho de ofurô de sais</li>
-									<li>Limpeza de pele</li>
-									<li>Reflexologia nos pés (60')</li>
-									<li>Shiatsu (60')</li>
-									<li>Gommage</li>
-									<li>Hot Stones (90')</li>
+									<li><label class="slide-banho-de-ofuro">Banho de ofurô de sais</label></li>
+									<li><label class="slide-limpeza-de-pele">Limpeza de pele</label></li>
+									<li><label class="slide-reflexologia-nos-pes">Reflexologia nos pés (60')</label></li>
+									<li><label class="slide-shiatsu">Shiatsu (60')</label></li>
+									<li><label class="slide-gommage">Gommage</label></li>
+									<li><label class="slide-hot-stones">Hot Stones (90')</label></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="item">
-						<img class="img-responsive" src="img/14858227067551859293157.jpg">
+						<img class="img-responsive" src="img/skin.jpg">
 						<div class="carousel-caption">
 							<h3>Special Skin Care</h3>
 							<p>Clique e saiba mais</p>
@@ -153,31 +153,127 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<label id="slide-acupuntura"><img src="img/acupunturaf1.jpg"/></label>
+						<label class="slide-acupuntura">
+							<img src="img/acupunturaf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Acupuntura</p>
+							</div>
+						</label>
 					</div>
-					<div class="item"><label id="slide-banho-de-lua"><img src="img/banho_de_luaf1.jpg"/></label></div>
-					<div class="item"><label id="slide-banho-de-ofuro"><img src="img/banho_de_ofurof1.jpg"/></label></div>
-					<div class="item"><label id="slide-drenagem-linfatica"><img src="img/drenagem_linfaticaf1.jpg"/></label></div>
-					<div class="item"><label id="slide-gommage"><img src="img/gommagef1.jpg"/></label></div>
-					<div class="item"><label id="slide-limpeza-de-pele"><img src="img/limpeza_de_pelef1.jpg"/></label></div>
-					<div class="item"><label id="slide-mascara-facial"><img src="img/mascara-alface.jpg"/></label></div>
-					<div class="item"><label id="slide-massagem-classica"><img src="img/massagem_classicaf1.jpg"/></label></div>
-					<div class="item"><label id="slide-massagem-facial"><img src="img/massagem_facialf1.jpg"/></label></div>
-					<div class="item"><label id="slide-hot-stones"><img src="img/hot_stonesf1.jpg"/></label></div>
-					<div class="item"><label id="slide-reflexologia-nos-pes"><img src="img/reflexologia_nos_pesf1.jpg"/></label></div>
-					<div class="item"><label id="slide-sauna"><img src="img/saunaf1.jpg"/></label></div>
-					<div class="item"><label id="slide-shiatsu"><img src="img/shiatsuf1.jpg"/></label></div>
-					<div class="item"><label id="slide-shizen-express"><img src="img/shizen_expressf1.jpg"/></label></div>
+					<div class="item">
+						<label class="slide-banho-de-lua">
+							<img src="img/banho_de_luaf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Banho de lua</p>
+							</div>
+						</label>
+					</div>
+					<div class="item">
+						<label class="slide-banho-de-ofuro">
+							<img src="img/banho_de_ofurof1.jpg"/>
+							<div class="carousel-caption">
+								<p>Banho de ofurô</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-drenagem-linfatica">
+							<img src="img/drenagem_linfaticaf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Drenagem Linfática</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-gommage">
+							<img src="img/gommagef1.jpg"/>
+							<div class="carousel-caption">
+								<p>Gommage</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-limpeza-de-pele">
+							<img src="img/limpeza_de_pelef1.jpg"/>
+							<div class="carousel-caption">
+								<p>Limpeza de pele</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-mascara-facial">
+							<img src="img/mascara-alface.jpg"/>
+							<div class="carousel-caption">
+								<p>Máscaras faciais</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-massagem-classica">
+							<img src="img/massagem_classicaf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Massagem clássica</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-massagem-facial">
+							<img src="img/massagem_facialf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Massagem facial</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-hot-stones">
+							<img src="img/hot_stonesf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Hot stones</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-reflexologia-nos-pes">
+							<img src="img/reflexologia_nos_pesf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Reflexologia nos pés</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-sauna">
+							<img src="img/saunaf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Sauna a vapor</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-shiatsu">
+							<img src="img/shiatsuf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Shiatsu</p>
+							</div>
+							</label>
+					</div>
+					<div class="item">
+						<label class="slide-shizen-express">
+							<img src="img/shizen_expressf1.jpg"/>
+							<div class="carousel-caption">
+								<p>Shizen Express</p>
+							</div>
+							</label>
+					</div>
 				</div>
 				<!-- Controls -->
-					<a class="left carousel-control" href="#carousel-servicos" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#carousel-servicos" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
+				<a class="left carousel-control" href="#carousel-servicos" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-servicos" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 			<dialog id="desc-acupuntura" >
 				<img src="img/acupunturaf1.jpg">

@@ -14,22 +14,25 @@ document.documentElement.onclick = function(event) {
     }
 };
 
+  $("#carousel-sugestoes").click(function(){
+    $("#carousel-sugestoes").carousel("pause");
+  });
 
 
-var slideAcupuntura = document.querySelector("#slide-acupuntura");
-var slideBanhoDeLua = document.querySelector("#slide-banho-de-lua");
-var slideBanhoDeOfuro = document.querySelector("#slide-banho-de-ofuro");
-var slideDrenagemLinfatica = document.querySelector("#slide-drenagem-linfatica");
-var slideGommage = document.querySelector("#slide-gommage");
-var slideLimpezaDePele = document.querySelector("#slide-limpeza-de-pele");
-var slideMascaraFacial = document.querySelector("#slide-mascara-facial");
-var slideMassagemClassica = document.querySelector("#slide-massagem-classica");
-var slideMassagemFacial = document.querySelector("#slide-massagem-facial");
-var slideHotStones = document.querySelector("#slide-hot-stones");
-var slideReflexologiaNosPes = document.querySelector("#slide-reflexologia-nos-pes");
-var slideSauna = document.querySelector("#slide-sauna");
-var slideShiatsu = document.querySelector("#slide-shiatsu");
-var slideShizenExpress = document.querySelector("#slide-shizen-express");
+var slideAcupuntura = document.querySelector(".slide-acupuntura");
+var slideBanhoDeLua = document.querySelector(".slide-banho-de-lua");
+var slideBanhoDeOfuro = document.querySelector(".slide-banho-de-ofuro");
+var slideDrenagemLinfatica = document.querySelector(".slide-drenagem-linfatica");
+var slideGommage = document.querySelector(".slide-gommage");
+var slideLimpezaDePele = document.querySelector(".slide-limpeza-de-pele");
+var slideMascaraFacial = document.querySelector(".slide-mascara-facial");
+var slideMassagemClassica = document.querySelector(".slide-massagem-classica");
+var slideMassagemFacial = document.querySelector(".slide-massagem-facial");
+var slideHotStones = document.querySelector(".slide-hot-stones");
+var slideReflexologiaNosPes = document.querySelector(".slide-reflexologia-nos-pes");
+var slideSauna = document.querySelector(".slide-sauna");
+var slideShiatsu = document.querySelector(".slide-shiatsu");
+var slideShizenExpress = document.querySelector(".slide-shizen-express");
 
 var descAcupuntura = document.querySelector("#desc-acupuntura");
 var descBanhoDeLua = document.querySelector("#desc-banho-de-lua");

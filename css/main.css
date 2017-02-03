@@ -273,7 +273,19 @@ agradar e surpreender, sempre.
 	float: right;
 }
 
-
-.item {
+.panel {
 	background-color: #574C3C;
+}
+
+.panel-body {
+	background-color: #574C3C;
+}
+
+.panel-body p, ul {
+	padding-left: 5em;
+}
+
+#carousel-sugestoes .carousel-caption {
+    top: 0;
+    bottom: auto;
 }
