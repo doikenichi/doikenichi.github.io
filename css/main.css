@@ -275,17 +275,25 @@ agradar e surpreender, sempre.
 
 .panel {
 	background-color: #574C3C;
+	border-style: none;
 }
 
 .panel-body {
 	background-color: #574C3C;
 }
 
-.panel-body p, ul {
+.panel-body ul {
 	padding-left: 5em;
 }
 
 #carousel-sugestoes .carousel-caption {
     top: 0;
     bottom: auto;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > div > a > img{
+	width: 100%; /* use this, or not */
+	margin: auto;
 }
