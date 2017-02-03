@@ -6,18 +6,8 @@ body {
 	color: #cbc7b3;
 }
 
-header {
-	/* border-top: solid;
-	border-bottom: solid;
-	border-color: #2B1C00;
-	border-width: 0.1em; */
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#554a2b+0,332d1a+100;Olive+3D */
-	//background: #edebe1; /* Old browsers */
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: baseline;
-
+main {
+	float: none;
 }
 
 .servicos {
@@ -71,69 +61,24 @@ header {
     text-indent: -99999px;
 }
 
-dialog {
+.modal-dialog {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   max-width: 90%;
+  background-color: #574C3C; /* Old browsers */
 }
 
-dialog img {
+.modal-dialog  img {
 	float: left;
 	max-width: 100%;
 	max-height: 100%;
 	padding-right: 0.5em;
-}
-
-
-dialog::backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/*dialog::after {
-    content: "";
-    display: block;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    background: rgba(0,0,0,0.4);
-}*/
-
-dialog h1 {
-	font-size: 2em;
-	font-weight: bold;
-}
-
-dialog img {
-	float: left;
-	max-width: 100%;
-	max-height: 100%;
 	border-style: none;
-	padding-right: 1em;
 }
 
-dialog strong {
+.modal-dialog  strong {
 	font-weight: bold;
-}
-
-
-.sugestoes {
-	//top:0;
-}
-
-.sugestoes:hover {
-	Excelentes opções para presentear, nossas sugestões são memoráveis!
-Combinações especiais para você
-agradar e surpreender, sempre.
 }
 
 .sugestoes img {
@@ -233,14 +178,11 @@ agradar e surpreender, sempre.
 
 @media (min-width: 1000px) {
     .menu-abrir,
-    .menu-fechar {
+    .menu-fechar,
+    .menu-lbl,
+    .barra-nav {
         display: none;
     }
-
-    
-	.barra-nav {
-		display: none;
-	}
 	
 	.menu {
 			display: -webkit-flex;
@@ -296,4 +238,9 @@ agradar e surpreender, sempre.
 .carousel-inner > .item > div > a > img{
 	width: 100%; /* use this, or not */
 	margin: auto;
+}
+
+
+.carousel-inner > .item label{
+	cursor: help;
 }
