@@ -12,8 +12,8 @@
 </head>
 <body class="container">
 	<header class="page-header">
-		<label class="menu-lbl">
-			<button class="menu-abrir">
+		<label class="menu-lbl pull-left" >
+			<button class="menu-abrir center-block">
 				Abre Menu
 			</button>
 		</label>
@@ -45,9 +45,9 @@
 			</ul>
 		</nav>
 		<section class="sugestoes">
-			<h2 class="text-center" data-toggle="tooltip" title="Excelentes opções para presentear, nossas sugestões são memoráveis!
+			<h2 class="text-center" data-toggle="tooltip" data-placement="top" title="Excelentes opções para presentear, nossas sugestões são memoráveis!
 Combinações especiais para você agradar e surpreender, sempre.">Sugestões especiais</h2>
-			<div id="carousel-sugestoes" class="carousel slide" data-ride="carousel" data-pause="click">
+			<div id="carousel-sugestoes" class="carousel slide" data-ride="carousel" data-pause="hover">
 			  	<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-sugestoes" data-slide-to="0" class="active"></li>
@@ -73,21 +73,19 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 					</div>
 					<div class="item">
 						<div class="panel panel-default">
-							<!--<div class="panel-heading" role="tab" id="headingSugestaoShizenDaySpa">-->
-								<a role="button" data-toggle="collapse" href="#collapseSugestaoShizenDaySpa" aria-expanded="true" aria-controls="collapseSugestaoShizenDaySpa">
-									<img class="img-responsive" src="img/shizen-day-spa.jpg"/ alt="Sugestão Shizen Day Spa">
-									<div class="carousel-caption">
-										<h3>Shizen Day Spa</h3>
-										<p>Clique e saiba mais</p>
-									</div>
-								</a>
-							<!--</div>-->
-							<div id="collapseSugestaoShizenDaySpa" class="panel-body collapse" role="tabpanel" aria-labelledby="headingSugestaoShizenDaySpa">
-								<p>A nossa sugestão <strong>SHIZEN DAY SPA</strong> é composto pelos nossos serviços abaixo especialmente escolhidos para a total relaxamento</p>
-								<p>Tempo de duração da sugestáo é de 9 horas</p>
+							<a role="button" data-toggle="collapse" href="#collapseSugestaoShizenDaySpa" aria-expanded="true" aria-controls="collapseSugestaoShizenDaySpa">
+								<img class="img-responsive" src="img/shizen-day-spa.jpg" alt="Sugestão Shizen Day Spa"/>
+								<div class="carousel-caption">
+									<h3>Shizen Day Spa</h3>
+									<p>Clique e saiba mais</p>
+								</div>
+							</a>
+							<div id="collapseSugestaoShizenDaySpa" class="panel-body collapse" role="tabpanel">
+								<p>A nossa sugestão <strong>SHIZEN DAY SPA</strong> é especialmente pensada para o total relaxamento</p>
+								<p>Tempo de duração da sugestáo é de 9 horas e acompanha Lanche e Refeição</p>
 								<p>Os serviços oferecidos no pacote são: </p>
 								<ul>
-									<li><label class="slide-banho-de-ofuro">Banho de ofurô de sais</label></li>
+									<li><label class="btn btn-default" data-toggle="modal" data-target="#desc-banho-de-ofuro">Banho de ofurô de sais</button> </li>
 									<li><label class="slide-limpeza-de-pele">Limpeza de pele</label></li>
 									<li><label class="slide-reflexologia-nos-pes">Reflexologia nos pés (60')</label></li>
 									<li><label class="slide-shiatsu">Shiatsu (60')</label></li>
@@ -98,10 +96,29 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 						</div>
 					</div>
 					<div class="item">
-						<img class="img-responsive" src="img/skin.jpg">
-						<div class="carousel-caption">
-							<h3>Special Skin Care</h3>
-							<p>Clique e saiba mais</p>
+						<div class="panel panel-default">
+							<a role="button" data-toggle="collapse" href="#collapseSugestaoSkinCare" aria-expanded="true" aria-controls="collapseSugestaoSkinCare">
+								<img class="img-responsive" src="img/skin.jpg" alt="Sugestão Special Skin Care"/>
+								<div class="carousel-caption">
+									<h3>Special Skin Care</h3>
+									<p>Clique e saiba mais</p>
+								</div>
+							</a>
+							<div id="collapseSugestaoSkinCare" class="panel-body collapse" role="tabpanel">
+								<span>
+									<p>A nossa sugestão <strong>SPECIAL SKIN CARE</strong> é especialmente pensada para cuidado total da pele</p>
+									<p>Tempo de duração da sugestáo é de 5 horas e acompanha Lanche e Refeição</p>
+									<p>Os serviços oferecidos no pacote são: </p>
+								</span>
+								<ul>
+									<li><label data-toggle="modal" data-target="#desc-banho-de-ofuro">Banho de ofurô de sais</label> </li>
+									<li><label class="slide-limpeza-de-pele">Limpeza de pele</label></li>
+									<li><label class="slide-reflexologia-nos-pes">Reflexologia nos pés (60')</label></li>
+									<li><label class="slide-shiatsu">Shiatsu (60')</label></li>
+									<li><label class="slide-gommage">Gommage</label></li>
+									<li><label class="slide-hot-stones">Hot Stones (90')</label></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="item">
@@ -131,7 +148,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 			</div>
 		</section>
 		<section class="servicos">
-			<h2 class="text-center" data-toggle="tooltip" title="Serviços para seu bem-estar e beleza">Nossos serviços</h2>
+			<h2 class="text-center" data-toggle="tooltip" data-placement="top" title="Serviços para seu bem-estar e beleza">Nossos serviços</h2>
 			<div id="carousel-servicos" class="carousel slide" data-ride="carousel">
 			  	<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -153,7 +170,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<label class="slide-acupuntura">
+						<label data-toggle="modal" data-target="#desc-acupuntura">
 							<img src="img/acupunturaf1.jpg"/>
 							<div class="carousel-caption">
 								<p>Acupuntura</p>
@@ -161,7 +178,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 						</label>
 					</div>
 					<div class="item">
-						<label class="slide-banho-de-lua">
+						<label data-toggle="modal" data-target="#desc-banho-de-lua">
 							<img src="img/banho_de_luaf1.jpg"/>
 							<div class="carousel-caption">
 								<p>Banho de lua</p>
@@ -169,12 +186,12 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 						</label>
 					</div>
 					<div class="item">
-						<label class="slide-banho-de-ofuro">
+						<label data-toggle="modal" data-target="#desc-banho-de-ofuro">
 							<img src="img/banho_de_ofurof1.jpg"/>
 							<div class="carousel-caption">
 								<p>Banho de ofurô</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-drenagem-linfatica">
@@ -182,7 +199,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Drenagem Linfática</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-gommage">
@@ -190,7 +207,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Gommage</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-limpeza-de-pele">
@@ -198,7 +215,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Limpeza de pele</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-mascara-facial">
@@ -206,7 +223,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Máscaras faciais</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-massagem-classica">
@@ -214,7 +231,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Massagem clássica</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-massagem-facial">
@@ -222,7 +239,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Massagem facial</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-hot-stones">
@@ -230,7 +247,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Hot stones</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-reflexologia-nos-pes">
@@ -238,7 +255,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Reflexologia nos pés</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-sauna">
@@ -246,7 +263,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Sauna a vapor</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-shiatsu">
@@ -254,7 +271,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Shiatsu</p>
 							</div>
-							</label>
+						</label>
 					</div>
 					<div class="item">
 						<label class="slide-shizen-express">
@@ -262,7 +279,7 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 							<div class="carousel-caption">
 								<p>Shizen Express</p>
 							</div>
-							</label>
+						</label>
 					</div>
 				</div>
 				<!-- Controls -->
@@ -275,34 +292,58 @@ Combinações especiais para você agradar e surpreender, sempre.">Sugestões es
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-			<dialog id="desc-acupuntura" >
-				<img src="img/acupunturaf1.jpg">
-				<h1>Acupuntura</h1>
-				<p>
-					Vida é energia. Harmonize a energia que flui por seus meridianos e fique de bem com a vida através desta técnica milenar reconhecida e indicada pela Organização Mundial de Saúde para profilaxia e tratamento de diversas enfermidades.
-				</p>
-				<p>Agende uma avaliação e conheça mais sobre esta técnica que pode ajudar de forma natural e harmoniosa.</p>
-				<p><strong>Duração:</strong> 60 minutos</p>
-				<button class="close-dialog">Fechar</button>
-			</dialog>
-			<dialog id="desc-banho-de-lua">
-				<img src="img/banho_de_luaf1.jpg">
-				<h1>Banho de lua</h1>
-				<p>
-					Deixe sua sensualidade aparecer através de uma pele renovada e macia. Elaborado para ressaltar sua feminilidade, o banho de lua oferece um cuidado especial ao seu corpo, principalmente na temporada de piscinas e praias! Realizado em quatro etapas que englobam a descoloração dos pêlos, esfoliação, nutrição e hidratação de seu corpo, o banho de lua consegue deixá-la ainda mais bonita e extremamente renovada.
-				</p>
-				<p><strong>Duração:</strong> 120 minutos</p>	
-				<button class="close-dialog">Fechar</button>
-			</dialog>
-			<dialog id="desc-banho-de-ofuro">
-				<img src="img/banho_de_ofurof1.jpg">
-				<h1>Banho de ofurô</h1>
-				<p>
-					O ofurô ("banho" em japonês) é parte integrante da cultura japonesa e assim como o sushi e o karaokê, foi incorporado pelos ocidentais como uma prática agradável e salutar. O suave aroma da madeira e o aconchego da água aquecida em um ofurô, seguidos por uma suave pompage, promovem um momento único de relaxamento e reflexão, ideal para um fim de tarde após o trabalho.
-				</p>
-				<p><strong>Duração:</strong> 60 minutos (sais, vinho ou pétalas de rosas)</p>
-				<button class="close-dialog">Fechar</button>
-			</dialog>
+			<!-- Modal -->
+			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="acupuntura" id="desc-acupuntura" >
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title text-center">Acupuntura</h4>
+						</div>
+						<div class="modal-body">
+							<img src="img/acupunturaf1.jpg">
+							<p>
+								Vida é energia. Harmonize a energia que flui por seus meridianos e fique de bem com a vida através desta técnica milenar reconhecida e indicada pela Organização Mundial de Saúde para profilaxia e tratamento de diversas enfermidades.
+							</p>
+							<p>Agende uma avaliação e conheça mais sobre esta técnica que pode ajudar de forma natural e harmoniosa.</p>
+							<p><strong>Duração:</strong> 60 minutos</p>
+						</div> <!--  modal body -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+						</div> <!--  modal footer -->
+					</div> <!--  modal content -->
+				</div>  <!--  modal dialog -->
+			</div>  <!--  modal fade -->
+			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="acupuntura" id="desc-banho-de-lua" >
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+							<img src="img/banho_de_luaf1.jpg"/>
+							<h4 class="modal-title">Banho de lua</h4>
+							<p>
+								Deixe sua sensualidade aparecer através de uma pele renovada e macia. Elaborado para ressaltar sua feminilidade, o banho de lua oferece um cuidado especial ao seu corpo, principalmente na temporada de piscinas e praias! Realizado em quatro etapas que englobam a descoloração dos pêlos, esfoliação, nutrição e hidratação de seu corpo, o banho de lua consegue deixá-la ainda mais bonita e extremamente renovada.
+							</p>
+							<p><strong>Duração:</strong> 120 minutos</p>	
+						</div> <!--  modal body -->
+					</div> <!--  modal content -->
+				</div>  <!--  modal dialog -->
+			</div>  <!--  modal fade -->
+			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="acupuntura" id="desc-banho-de-ofuro" >
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+							<img src="img/banho_de_ofurof1.jpg">
+							<h4 class="modal-title">Banho de ofurô</h4>
+							<p>
+								O ofurô ("banho" em japonês) é parte integrante da cultura japonesa e assim como o sushi e o karaokê, foi incorporado pelos ocidentais como uma prática agradável e salutar. O suave aroma da madeira e o aconchego da água aquecida em um ofurô, seguidos por uma suave pompage, promovem um momento único de relaxamento e reflexão, ideal para um fim de tarde após o trabalho.
+							</p>
+							<p><strong>Duração:</strong> 60 minutos (sais, vinho ou pétalas de rosas)</p>
+						</div> <!--  modal body -->
+					</div> <!--  modal content -->
+				</div>  <!--  modal dialog -->
+			</div>  <!--  modal fade -->
 			<dialog id="desc-drenagem-linfatica">
 				<img src="img/drenagem_linfaticaf1.jpg">
 				<h1>Drenagem Linfática</h1>
