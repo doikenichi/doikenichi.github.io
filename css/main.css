@@ -61,15 +61,14 @@ main {
     text-indent: -99999px;
 }
 
-.modal-dialog {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  max-width: 90%;
-  background-color: #574C3C; /* Old browsers */
+.modal-header,
+.modal-footer,
+.modal-body {
+  background-color: #D9D5C5; /* Old browsers */
+  color: #816d4c;
 }
 
-.modal-dialog  img {
+.modal-body  img {
 	float: left;
 	max-width: 100%;
 	max-height: 100%;
@@ -77,12 +76,12 @@ main {
 	border-style: none;
 }
 
-.modal-dialog  strong {
+.modal-body  strong {
 	font-weight: bold;
 }
 
 .sugestoes img {
-	max-height: 15em;
+	height: 15em;
 
 }
 
@@ -175,6 +174,50 @@ main {
     background: rgba(0,0,0,0.4);
 }
 
+.panel {
+    background-color: #574C3C;
+    border-style: none;
+}
+
+.panel-body {
+    background-color: #574C3C;
+}
+
+.panel-body ul {
+    //padding-left: 3em;
+}
+
+#carousel-sugestoes .carousel-caption {
+    top: 0;
+    bottom: auto;
+}
+
+.carousel-inner > .item img, 
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > div > a > img{
+    width: 100%; /* use this, or not */
+    margin: auto;
+}
+
+
+.carousel-inner > .item label{
+    cursor: help;
+}
+
+
+.item .panel .panel-body .btn {
+    background: #574C3C;
+    box-shadow: none;
+    color: #cbc7b3;
+    text-shadow: none;
+    width: 100%;
+    text-align: left;
+}
+
+.modal .container {
+    padding-bottom: 0.5em;
+}
+
 
 @media (min-width: 1000px) {
     .menu-abrir,
@@ -209,48 +252,4 @@ main {
 
 	}
 
-}
-
-.panel {
-	background-color: #574C3C;
-	border-style: none;
-}
-
-.panel-body {
-	background-color: #574C3C;
-}
-
-.panel-body ul {
-	//padding-left: 3em;
-}
-
-#carousel-sugestoes .carousel-caption {
-    top: 0;
-    bottom: auto;
-}
-
-.carousel-inner > .item img, 
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > div > a > img{
-	width: 100%; /* use this, or not */
-	margin: auto;
-}
-
-
-.carousel-inner > .item label{
-	cursor: help;
-}
-
-
-.item .panel .panel-body .btn {
-    background: #574C3C;
-    box-shadow: none;
-    color: #cbc7b3;
-    text-shadow: none;
-    width: 100%;
-    text-align: left;
-}
-
-.modal .container {
-    padding-bottom: 0.5em;
 }
