@@ -10,6 +10,14 @@ main {
 	float: none;
 }
 
+header a,
+header a:visited,
+header a:hover,
+header a:active {
+    color: #cbc7b3;
+    text-decoration: none;
+}
+
 .servicos {
 	border-style: solid none;
 	border-width: 0.5em;
@@ -50,7 +58,6 @@ main {
 }
 
 .facebook {
-    ///background-image: url(../img/fb-round.png);
     background-image: url(../img/fb-circle-40.png);
 }
 
@@ -85,11 +92,6 @@ main {
 
 .modal-body  strong {
 	font-weight: bold;
-}
-
-.sugestoes img {
-	height: 15em;
-
 }
 
 .barra-nav {
@@ -204,6 +206,7 @@ main {
 .carousel-inner > .item > div > a > img{
     width: 100%; /* use this, or not */
     margin: auto;
+    height: 15em;
 }
 
 
@@ -223,6 +226,10 @@ main {
 
 .modal .container {
     padding-bottom: 0.5em;
+}
+
+.carousel-caption {
+    color: #FAFAD2;
 }
 
 
