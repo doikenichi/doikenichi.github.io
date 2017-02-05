@@ -61,6 +61,13 @@ main {
     text-indent: -99999px;
 }
 
+.modal-content {
+    //border-radius: 50%;
+    -webkit-border-radius: 20em !important;
+    -moz-border-radius: 20em !important;
+    border-radius: 20em !important;
+}
+
 .modal-header,
 .modal-footer,
 .modal-body {
