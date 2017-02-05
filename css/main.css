@@ -240,3 +240,17 @@ main {
 .carousel-inner > .item label{
 	cursor: help;
 }
+
+
+.item .panel .panel-body .btn {
+    background: #574C3C;
+    box-shadow: none;
+    color: #cbc7b3;
+    text-shadow: none;
+    width: 26em;
+    text-align: left;
+}
+
+.modal .container {
+    padding-bottom: 0.5em;
+}
