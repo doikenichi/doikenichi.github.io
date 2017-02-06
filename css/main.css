@@ -101,8 +101,8 @@ header a:active {
 }
 
 .barra-nav {
-    background: #f0f0f0;
-    padding: 1em;
+    background: #c2b280;
+    //padding: 1em;
     margin: 0;
 
     height: 100%;
@@ -117,8 +117,21 @@ header a:active {
     transition: left 0.3s ease-out;
 }
 
-.menu-abrir,
-.menu-fechar {
+.barra-nav li {
+    border-top: solid;
+//        color: #000000;
+}
+
+.barra-nav li a,
+.barra-nav li a:visited,
+.barra-nav li a:hover,
+.barra-nav li a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.menu-abrir {
     border: .2em solid rgba(0, 0, 0, 0.3);
     border-radius: 6px;
     width: 50px;
@@ -127,11 +140,27 @@ header a:active {
     background: none;
     text-shadow: none;
 }
-.menu-abrir:hover,
-.menu-fechar:hover { 
+.menu-abrir:hover { 
     background: none;
     color: #FFA07A;
 }
+
+.menu-fechar {
+    border: .2em solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    width: 50px;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.3);
+    background: none;
+    text-shadow: none;
+}
+
+.menu-fechar:hover { 
+    background: none;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
 
 .menu-principal li {
     padding: 1em 0;
