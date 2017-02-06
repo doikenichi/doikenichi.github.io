@@ -190,7 +190,6 @@ header a:active {
     cursor: help;
 }
 
-
 .item .panel .panel-body .btn {
     background: #574C3C;
     box-shadow: none;
@@ -207,7 +206,6 @@ header a:active {
 .carousel-caption {
     color: #FAFAD2;
 }
-
 
 @media (min-width: 1000px) {
     .menu-abrir,
