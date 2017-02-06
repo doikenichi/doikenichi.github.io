@@ -1,13 +1,13 @@
 body {
-	font-family: tahoma, arial, helvetica, sans-serif;
-	//max-width: 90%;
-	margin: 0 auto; 
-	background-color: #574C3C;
-	color: #cbc7b3;
+    font-family: tahoma, arial, helvetica, sans-serif;
+    //max-width: 90%;
+    margin: 0 auto; 
+    background-color: #574C3C;
+    color: #cbc7b3;
 }
 
 main {
-	float: none;
+    float: none;
 }
 
 header a,
@@ -19,36 +19,36 @@ header a:active {
 }
 
 .servicos {
-	border-style: solid none;
-	border-width: 0.5em;
-	border-color: #cbc7b3;
-	width: 100%;
+    border-style: solid none;
+    border-width: 0.5em;
+    border-color: #cbc7b3;
+    width: 100%;
 }
 
 .slider-nav img {
-	max-width: 10em;
-	max-height: 10em;
-	border-style: none;
+    max-width: 10em;
+    max-height: 10em;
+    border-style: none;
 }
 
 .slider-nav {
-	width: 95%;
-	margin: 0 auto; 
+    width: 95%;
+    margin: 0 auto; 
 }
 
 .slider-for .main-item {
-	width: 100%;
+    width: 100%;
 }
 
 .footer {
-	display: -webkit-flex;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: baseline;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
 }
 
 .footer li {
-	-webkit-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
 
 }
@@ -75,23 +75,29 @@ header a:active {
     border-radius: 20em !important;
 }
 
+
 .modal-header,
+.modal-content {
+  background-color: #C0C0C0; /* Old browsers */
+  color: #816d4c;
+}
+
 .modal-footer,
 .modal-body {
   background-color: #D9D5C5; /* Old browsers */
   color: #816d4c;
 }
 
-.modal-body  img {
-	float: left;
-	max-width: 100%;
-	max-height: 100%;
-	padding-right: 0.5em;
-	border-style: none;
+.modal-header  img {
+    //float: left;
+    width: 100%;
+    height: 15em;
+    padding-right: 0.5em;
+    border-style: none;
 }
 
 .modal-body  strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .barra-nav {
@@ -101,7 +107,7 @@ header a:active {
 
     height: 100%;
     width: 90%
-    max-width: 600px;
+    //max-width: 600px;
 
     position: fixed;
     z-index: 1;
@@ -113,48 +119,18 @@ header a:active {
 
 .menu-abrir,
 .menu-fechar {
+    border: .2em solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    width: 50px;
+    height: 50px;
+    color: #FFA07A;
     background: none;
-    border: 0;
-    outline: 0;
-    -webkit-appearance: none;
-    font-size: 1.6em;
-    text-indent: -999em;
+    text-shadow: none;
 }
-
-.menu-lbl {
-	border: .2em solid rgba(0, 0, 0, 0.3);
-  	border-radius: 6px;
-  	width: 50px;
-  	height: 50px;
-}
-
-.menu-abrir {
-    height: 0;
-    width:.75em;
-    //padding-top:.125em;
-    border-top: .375em double #000;
-    border-bottom: .177em solid #000;
-    border-color: #FFA07A;
-
-    vertical-align: middle;
-    margin: 0.5em;    
-}
-
-.menu-fechar {
-    position: relative;
-    padding:.125em;
-    //padding-left: .5em;
-    height: 1em;
-    width: 1em;
-    //vertical-align: middle;
-}
-
-.menu-fechar:before {
-    content: '\00D7';
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-indent: 0;
+.menu-abrir:hover,
+.menu-fechar:hover { 
+    background: none;
+    color: #FFA07A;
 }
 
 .menu-principal li {
@@ -163,7 +139,7 @@ header a:active {
 }
 
 .menu {
-	display: none;
+    display: none;
 }
 
 .menu-ativo .barra-nav {
@@ -240,30 +216,30 @@ header a:active {
     .barra-nav {
         display: none;
     }
-	
-	.menu {
-			display: -webkit-flex;
-			display: flex;
-			flex-flow: row wrap;
-			align-items: baseline;
-			justify-content: space-around;
-	}
-	
-	.menu-item {
-		-webkit-flex: 1 1 auto;
-		flex: 1 1 auto;
-		font-size: 1.1em;
-		font-weight: bold;
-		color: #cbc7b3;
-		text-align: center;
-		padding: 0.5em;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#554a2b+0,332d1a+100;Olive+3D */
-		background: #554a2b; /* Old browsers */
-		background: -moz-linear-gradient(top,  #554a2b 0%, #332d1a 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top,  #554a2b 0%,#332d1a 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom,  # 0%,#332d1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#554a2b', endColorstr='#332d1a',GradientType=0 ); /* IE6-9 */
+    
+    .menu {
+            display: -webkit-flex;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: baseline;
+            justify-content: space-around;
+    }
+    
+    .menu-item {
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #cbc7b3;
+        text-align: center;
+        padding: 0.5em;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#554a2b+0,332d1a+100;Olive+3D */
+        background: #554a2b; /* Old browsers */
+        background: -moz-linear-gradient(top,  #554a2b 0%, #332d1a 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #554a2b 0%,#332d1a 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  # 0%,#332d1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#554a2b', endColorstr='#332d1a',GradientType=0 ); /* IE6-9 */
 
-	}
+    }
 
 }
