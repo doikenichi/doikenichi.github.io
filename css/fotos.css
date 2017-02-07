@@ -1,0 +1,19 @@
+.album ul {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album li {
+    -webkit-flex: auto;
+    flex: auto;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: .5em;
+}
+
+.album img {
+    width: 100%;
+    box-shadow: 0 0 4px #000;
+}
