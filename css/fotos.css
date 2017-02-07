@@ -18,6 +18,10 @@
     box-shadow: 0 0 4px #000;
 }
 
-.modal.and.carousel {
-  position: absolute; // Needed because the carousel overrides the position property
+.modals {
+	display: none;
+}
+
+.modals-on {
+	display: inline;
 }
