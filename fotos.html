@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="./css/lib/bootstrap-modal-carousel.min.css">
 	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./css/fotos.css">
 </head>
@@ -51,125 +52,137 @@
 			<h2 class="text-center" data-toggle="tooltip" data-placement="top" title="Fotos da shizen">Fotos</h2>
 			<ul>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="0">
+					<label data-target="#lightbox" data-toggle="modal" data-slide-to="0" data-local="#carousel-lightbox">
 						<figure>
 							<img src="img/album/mini_shizen01.jpg" alt="Shizen 01">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="1">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="1">
 						<figure>
 							<img src="img/album/mini_shizen02.jpg" alt="Shizen 02">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="2">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="2">
 						<figure>
 							<img src="img/album/mini_shizen03.jpg" alt="Shizen 03">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="3">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="3">
 						<figure>
 							<img src="img/album/mini_shizen04.jpg" alt="Shizen 04">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="4">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="4">
 						<figure>
 							<img src="img/album/mini_shizen05.jpg" alt="Shizen 05">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="5">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="5">
 						<figure>
 							<img src="img/album/mini_shizen06.jpg" alt="Shizen 06">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="6">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="6">
 						<figure>
 							<img src="img/album/mini_shizen07.jpg" alt="Shizen 07">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="7">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="7">
 						<figure>
 							<img src="img/album/mini_shizen08.jpg" alt="Shizen 08">
 						</figure>
-					</a>
+					</label>
 				</li>
 				<li>
-					<a href="#lightbox" data-toggle="modal" data-slide-to="8">
+					<label data-target="#lightbox"  data-local="#carousel-lightbox" data-toggle="modal" data-slide-to="8">
 						<figure>
 							<img src="img/album/mini_shizen09.jpg" alt="Shizen 09">
 						</figure>
-					</a>
+					</label>
 				</li>
 			</ul>
 		</section>
-		<div class="modal fade and carousel slide" id="lightbox">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-body">
-						<ol class="carousel-indicators">
-							<li data-target="#lightbox" data-slide-to="0" class="active"></li>
-							<li data-target="#lightbox" data-slide-to="1"></li>
-							<li data-target="#lightbox" data-slide-to="2"></li>
-							<li data-target="#lightbox" data-slide-to="3"></li>
-							<li data-target="#lightbox" data-slide-to="4"></li>
-							<li data-target="#lightbox" data-slide-to="5"></li>
-							<li data-target="#lightbox" data-slide-to="6"></li>
-							<li data-target="#lightbox" data-slide-to="7"></li>
-							<li data-target="#lightbox" data-slide-to="8"></li>
-						</ol>
-						<div class="carousel-inner">
-							<figure class="item active">
-								<img src="img/album/shizen01.jpg" alt="Shizen 01">
-							</figure>
-							<figure class="item">
-								<img src="img/album/shizen02.jpg" alt="Shizen 02">
-							</figure>
-							<figure class="item">
-								<img src="img/album/shizen03.jpg" alt="Shizen 03">
-							</figure>
-							<figure class="item">	
-								<img src="img/album/shizen04.jpg" alt="Shizen 04">
-							</figure>
-							<figure class="item">
-								<img src="img/album/shizen05.jpg" alt="Shizen 05">
-							</figure>
-							<figure class="item">
-								<img src="img/album/shizen06.jpg" alt="Shizen 06">
-							</figure>
-							<figure class="item">
-								<img src="img/album/shizen07.jpg" alt="Shizen 07">
-							</figure>
-							<figure class="item">
-								<img src="img/album/shizen08.jpg" alt="Shizen 08">
-							</figure>
-							<figure class="item">
-								<img src="img/album/shizen09.jpg" alt="Shizen 09">
-							</figure>
+		<section class="modals">
+			<!-- carsousel -->
+			<div id="carousel-lightbox" class="carousel slide carousel-fit" data-ride="carousel">
+			  	<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-lightbox" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="1"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="2"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="3"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="4"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="5"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="6"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="7"></li>
+					<li data-target="#carousel-lightbox" data-slide-to="8"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<figure class="item active">
+						<img src="img/album/shizen01.jpg" alt="Shizen 01">
+					</figure>
+					<figure class="item">
+						<img src="img/album/shizen02.jpg" alt="Shizen 02">
+					</figure>
+					<figure class="item">
+						<img src="img/album/shizen03.jpg" alt="Shizen 03">
+					</figure>
+					<figure class="item">	
+						<img src="img/album/shizen04.jpg" alt="Shizen 04">
+					</figure>
+					<figure class="item">
+						<img src="img/album/shizen05.jpg" alt="Shizen 05">
+					</figure>
+					<figure class="item">
+						<img src="img/album/shizen06.jpg" alt="Shizen 06">
+					</figure>
+					<figure class="item">
+						<img src="img/album/shizen07.jpg" alt="Shizen 07">
+					</figure>
+					<figure class="item">
+						<img src="img/album/shizen08.jpg" alt="Shizen 08">
+					</figure>
+					<figure class="item">
+						<img src="img/album/shizen09.jpg" alt="Shizen 09">
+					</figure>
+				</div>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-lightbox" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-lightbox" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div> <!-- container -->
+			<!-- modal -->
+			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Fotos da Shizen" id="lightbox" >
+				<div class="modal-dialog" role="document">
+				    <div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="close" aria-label="Close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+						</div> <!--  modal body -->
+					</div> <!--  modal content -->
+				</div>  <!--  modal dialog -->
+			</div>  <!--  modal fade -->
 
-						</div><!-- /.carousel-inner -->
-						<a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-						</a>
-						<a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-						</a>
-					</div><!-- /.modal-body -->
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+		</section>
 	</main>
 	<footer>
 		<ul class="footer">
@@ -190,6 +203,8 @@
 	</footer>
 	<script src="./js/lib/jquery-3.1.1.min.js"></script>
 	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./js/lib/bootstrap-modal-carousel.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/fotos.js"></script>
 </body>
 </html>
