@@ -1,5 +1,19 @@
 #map {
 	height: 10em;
 	min-width: 5em;
-	max-width: 50%;
+	width: 100%;
+}
+
+.contato form {
+	width: 49%;
+	float: left;
+}
+
+.contato .endereco {
+	float: right;
+	width: 49%;
+}
+
+.contato .endereco p {
+	font-style: italic;
 }
