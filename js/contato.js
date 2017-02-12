@@ -8,10 +8,10 @@ function initMap() {
     var mapCanvas = document.getElementById('map');
     var mapOptions = {
         center: shizenLoc,
-        zoom: 16,
+        zoom: 16/*,
         panControl: false,
         scrollwheel: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP*/
     }
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -22,7 +22,7 @@ function initMap() {
     });
 
     var contentString = '<div class="info-window">' +
-            '<h3>Shizen Day Spa</h3>' +
+            '<strong>Shizen Day Spa</strong>' +
             '<div class="info-content">' +
             '<p>Você é nosso convidado para conhecer nossa unidade e se surpreender!</p>'+
             '<p>Você será muito bem vindo!</p>' +
