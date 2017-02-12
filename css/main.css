@@ -10,36 +10,6 @@ main {
     float: none;
 }
 
-header a,
-header a:visited,
-header a:hover,
-header a:active {
-    color: #cbc7b3;
-    text-decoration: none;
-}
-
-.servicos {
-    border-style: solid none;
-    border-width: 0.5em;
-    border-color: #cbc7b3;
-    width: 100%;
-}
-
-.slider-nav img {
-    max-width: 10em;
-    max-height: 10em;
-    border-style: none;
-}
-
-.slider-nav {
-    width: 95%;
-    margin: 0 auto; 
-}
-
-.slider-for .main-item {
-    width: 100%;
-}
-
 .footer {
     display: -webkit-flex;
     display: flex;
@@ -160,8 +130,6 @@ header a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-
-
 .menu-principal li {
     padding: 1em 0;
     width: 100%;
@@ -186,46 +154,6 @@ header a:active {
     right: 0;
 
     background: rgba(0,0,0,0.4);
-}
-
-.panel {
-    background-color: #574C3C;
-    border-style: none;
-}
-
-.panel-body {
-    background-color: #574C3C;
-}
-
-.panel-body ul {
-    //padding-left: 3em;
-}
-
-#carousel-sugestoes .carousel-caption {
-    top: 0;
-    bottom: auto;
-}
-
-.carousel-inner > .item img, 
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > div > a > img{
-    width: 100%; /* use this, or not */
-    margin: auto;
-    height: 15em;
-}
-
-
-.carousel-inner > .item label{
-    cursor: help;
-}
-
-.item .panel .panel-body .btn {
-    background: #574C3C;
-    box-shadow: none;
-    color: #cbc7b3;
-    text-shadow: none;
-    width: 100%;
-    text-align: left;
 }
 
 .modal .container {
