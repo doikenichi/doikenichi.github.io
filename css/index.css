@@ -100,7 +100,7 @@
     flex: auto;
     box-sizing: border-box;
     padding: 0.5em;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-    max-width: 45%;
+    //margin-right: 0.5em;
+    //margin-bottom: 0.5em;
+    max-width: 40%;
 }
