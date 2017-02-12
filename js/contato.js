@@ -16,18 +16,16 @@ function initMap() {
 
     var map = new google.maps.Map(mapCanvas, mapOptions);
 
-    var markerImage = 'img/marker.png';
-
     var marker = new google.maps.Marker({
         position: shizenLoc,
-        map: map//,
-        //icon: markerImage
+        map: map
     });
 
     var contentString = '<div class="info-window">' +
             '<h3>Shizen Day Spa</h3>' +
             '<div class="info-content">' +
-            '<p>Você é nosso convidado para conhecer nossa unidade e se surpreender! Você será muito bem vindo!</p>' +
+            '<p>Você é nosso convidado para conhecer nossa unidade e se surpreender!</p>'+
+            '<p>Você será muito bem vindo!</p>' +
             '</div>' +
             '</div>';
 
