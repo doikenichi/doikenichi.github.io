@@ -1,8 +1,17 @@
 .sobre-shizen,
 .como-funciona {
-	border-style: solid;
+	border-bottom-style: solid;
 	border-width: .1em;
-	-webkit-border-radius: 2em !important;
+	/*-webkit-border-radius: 2em !important;
     -moz-border-radius: 2em !important;
-    border-radius: 2em !important;
+    border-radius: 2em !important;*/
+}
+
+.como-funciona  .panel > .panel-heading {
+    background-image: none;
+    background-color: #C0C0C0; /* Old browsers */
+}
+.como-funciona .panel-body {
+	color: black;
+	background-color: #edebe1;
 }
