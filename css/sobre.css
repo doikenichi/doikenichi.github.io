@@ -1,17 +1,39 @@
 .sobre-shizen,
+.missao-visao,
+.porque-shizen,
 .como-funciona {
 	border-bottom-style: solid;
 	border-width: .1em;
-	/*-webkit-border-radius: 2em !important;
-    -moz-border-radius: 2em !important;
-    border-radius: 2em !important;*/
 }
 
-.como-funciona  .panel > .panel-heading {
+.sobre-shizen img {
+	padding-right: 0.5em;
+}
+
+.sobre-shizen .btn {
+	background: #574C3C;
+    box-shadow: none;
+    color: #cbc7b3;
+    text-shadow: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sobre-shizen .spacer {
+	padding-bottom: 0.5em;
+}
+
+.panel > .panel-heading {
     background-image: none;
     background-color: #C0C0C0; /* Old browsers */
 }
-.como-funciona .panel-body {
+
+.panel-body {
 	color: black;
 	background-color: #edebe1;
+}
+
+.porque-shizen ul {
+	list-style-type: square;
+	padding-left: 1em;
 }
