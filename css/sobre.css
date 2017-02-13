@@ -1,0 +1,8 @@
+.sobre-shizen,
+.como-funciona {
+	border-style: solid;
+	border-width: .1em;
+	-webkit-border-radius: 2em !important;
+    -moz-border-radius: 2em !important;
+    border-radius: 2em !important;
+}
