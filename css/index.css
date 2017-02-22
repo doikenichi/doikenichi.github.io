@@ -79,6 +79,11 @@
     cursor: help;
 }
 
+.btn{
+    white-space:normal !important;
+    word-wrap:break-word; 
+}
+
 .item .panel .panel-body .btn {
     background: #574C3C;
     box-shadow: none;
