@@ -10,6 +10,11 @@ main {
     float: none;
 }
 
+.btn{
+    white-space:normal !important;
+    word-wrap:break-word; 
+}
+
 .footer {
     display: -webkit-flex;
     display: flex;
