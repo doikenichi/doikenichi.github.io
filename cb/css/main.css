@@ -15,3 +15,11 @@
 .list-group-item ul {
 	//float: right;
 }
+
+.list-group:nth-child(even) {
+	background: #CCC;
+}
+
+.list-group:nth-child(odd) {
+	background: #FFF;
+}
